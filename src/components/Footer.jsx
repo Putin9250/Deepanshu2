@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Attribution */}
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          Developed by <a href="https://putin9250.github.io/Portfolio_Deepanshu_Jain.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo-600 dark:hover:text-indigo-400">Deepanshu Jain</a>
+          Developed by <a href="https://Deepanshu530.github.io/Portfolio_Deepanshu_Jain.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo-600 dark:hover:text-indigo-400">Deepanshu Jain</a>
         </p>
       </div>
     </footer>
