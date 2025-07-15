@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex space-x-5">
           {/* LinkedIn */}
           <a 
-            href="https://www.linkedin.com/in/putin1/"
+            href="https://https://www.linkedin.com/in/deepanshu-jain-057874302"
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="LinkedIn"
@@ -32,7 +32,7 @@ const Footer = () => {
 
           {/* Email */}
           <a 
-            href="mailto:sahil24042005@gmail.com" 
+            href="mailto:Itipusacopa@gmail.com" 
             aria-label="Email"
             className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
           >
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Attribution */}
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          Developed by <a href="https://putin9250.github.io/Portfolio_Sahil_Kumar.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo-600 dark:hover:text-indigo-400">Sahil Kumar</a>
+          Developed by <a href="https://Deepanshu530.github.io/Portfolio_Deepanshu_Jain.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo-600 dark:hover:text-indigo-400">Deepanshu Jain</a>
         </p>
       </div>
     </footer>
