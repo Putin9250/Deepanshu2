@@ -6,6 +6,7 @@ import Projects from "./components/Project";
 import Skills from "./components/Skill";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Certifications from "./components/Certification";
 
 const App = () => {
   return (
@@ -18,6 +19,9 @@ const App = () => {
       </section>
       <section id="skills" style={{ minHeight: "100vh" }}>
         <Skills />
+      </section>
+      <section id="Certifications" style={{ minHeight: "100vh" }}>
+        <Certifications />
       </section>
       <section id="contact" style={{ minHeight: "100vh" }}>
         <Contact />

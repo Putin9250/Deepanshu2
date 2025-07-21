@@ -1,21 +1,27 @@
-import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import P1 from "../assets/p1.png";
+import P2 from "../assets/p2.png";
+import P3 from "../assets/p2.png";
 
 const projects = [
   {
-    title: "Lorem Ipsum",
+    title: "iResQ – Apple Device Service Center Website",
+    img: P2,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    link: "https://example.com",
+      "A professional and responsive website built for iResQ, a certified Apple service center in Bangalore. The site highlights their technical expertise, customer-first philosophy, service offerings (iPhone, iMac, iPad, MacBook), and includes detailed FAQs, contact information, and a modern UI optimized for conversions.",
+    link: "https://iresqindia.com/",
   },
   {
-    title: "Dolor Sit Amet",
+    title: "TechLife – Electronics Repair & Services Website",
+    img: P1,
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    link: "https://example.com",
+      "A modern, responsive website for TechLife, an electronics repair business in New York. The platform includes service descriptions, contact forms, repair process overview, testimonials, and detailed business info with working hours and multiple service offerings.",
+    link: "https://techlife.strongholdthemes.com/demos/demo2/",
   },
   {
     title: "Consectetur Adipiscing",
+    img: P3,
     description:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     link: "https://example.com",
@@ -30,7 +36,7 @@ const cardVariants = {
     transition: {
       delay: i * 0.2,
       duration: 0.6,
-      ease: 'easeOut',
+      ease: "easeOut",
     },
   }),
 };
@@ -43,7 +49,11 @@ const Projects = () => {
   });
 
   return (
-    <section ref={ref} className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 scroll-mt-20" id="projects">
+    <section
+      ref={ref}
+      className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 scroll-mt-20"
+      id="projects"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2
@@ -76,10 +86,15 @@ const Projects = () => {
               className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
               <div className="flex-grow">
-                <h3 className="text-xl font-semibold mb-2 text-blue-600">
+                <img src={project.img} alt={project.title} />
+              </div>
+              <div className="flex-grow">
+                <h3 className="text-xl truncate font-semibold mb-2 text-blue-600">
                   {project.title}
                 </h3>
-                <p className="text-gray-700 mb-4">{project.description}</p>
+                <p className="text-gray-700 truncatemb-4">
+                  {project.description}
+                </p>
               </div>
               <div>
                 <a

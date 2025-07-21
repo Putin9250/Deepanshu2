@@ -35,10 +35,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_xj74ggc", // Replace with your actual service ID
-        "template_792vkuo", // Your EmailJS template ID
+        "service_38y9hip", // Replace with your actual service ID
+        "template_tgotvjj", // Your EmailJS template ID
         formRef.current,
-        "p6OR3xZ0afJ3-rpu1" // Your EmailJS public key
+        "GXf97RpWAWxmcJpOF" // Your EmailJS public key
       )
       .then(() => {
         alert("Message sent successfully!");
